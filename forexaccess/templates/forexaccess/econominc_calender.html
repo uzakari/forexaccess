@@ -1,0 +1,182 @@
+{% extends 'forexaccess/Base.html' %}
+
+{% block content %}
+    <br>
+        <div class="main-container">
+
+            <section class="bg-white space-sm">
+
+                <div class="container">
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="display-4">Economic Calender</h1>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            <section>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-8 col-lg-7">
+                            <article>
+                                <div>
+                                   <script type="text/javascript" src="https://c.mql5.com/js/widgets/calendar/widget.v3.js"></script>
+                                    <div id="economicCalendarWidget"></div>
+                                    <script type="text/javascript">
+                                         new economicCalendar({ width: "750", height: "600", mode: 2 });
+                                    </script>
+                                    </div>
+                            </article>
+                            <hr>
+                            <small>
+                                Wingman is an Equal Opportunity Employer and Prohibits Discrimination and Harassment of Any Kind: Wingman is committed to the principle of equal employment opportunity for all employees and to providing employees with a work environment free of discrimination
+                                and harassment. All employment decisions at Wingman are based on business needs, job requirements and individual qualifications, without regard to race, color, religion or belief, national, social or ethnic origin, sex
+                                (including pregnancy), age, physical, mental or sensory disability. Wingman will not tolerate discrimination or harassment based on any of these characteristics. Wingman encourages applicants of all ages.
+                            </small>
+                            <hr>
+                            <h5 class="mb-4">Sound like the job for you?</h5>
+                            <form class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#" class="btn btn-success">Apply now</a>
+                                </div>
+                                <div>
+                                    <a href="#">Back to careers</a>
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div><i class="icon-tools mr-1"></i> Department</div>
+                                            <span>Engineering</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div><i class="icon-home mr-1"></i> Location</div>
+                                            <span>Melbourne, AU</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div><i class="icon-stopwatch mr-1"></i> Basis</div>
+                                            <span>Full time</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between">
+                                    <div>
+                                        <span class="h6">Development</span>
+                                        <span class="badge badge-secondary">6</span>
+                                    </div>
+                                    <a href="#">View all &rsaquo;</a>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled list-spacing-sm">
+                                        <li>
+                                            <i class="icon-text-document text-muted mr-1"></i>
+                                            <a href="#">Setting up API end-points</a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-text-document text-muted mr-1"></i>
+                                            <a href="#">Importing contacts via CSV</a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-text-document text-muted mr-1"></i>
+                                            <a href="#">Integrating your Gulp workflow</a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-text-document text-muted mr-1"></i>
+                                            <a href="#">Forking a repo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--end of card-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <span class="h6">Categories</span>
+                                </div>
+                                <div class="list-group list-group-flush">
+
+                                    <a class="list-group-item d-flex justify-content-between" href="#">
+                                        <div>
+                                            <i class="icon-area-graph mr-1"></i>
+                                            <span>Analytics</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-chevron-right"></i>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item d-flex justify-content-between" href="#">
+                                        <div>
+                                            <i class="icon-power-plug mr-1"></i>
+                                            <span>API Integration</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-chevron-right"></i>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item d-flex justify-content-between" href="#">
+                                        <div>
+                                            <i class="icon-credit-card mr-1"></i>
+                                            <span>Billing</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-chevron-right"></i>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item d-flex justify-content-between" href="#">
+                                        <div>
+                                            <i class="icon-code mr-1"></i>
+                                            <span>Development</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-chevron-right"></i>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item d-flex justify-content-between" href="#">
+                                        <div>
+                                            <i class="icon-shield mr-1"></i>
+                                            <span>Security</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-chevron-right"></i>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item d-flex justify-content-between" href="#">
+                                        <div>
+                                            <i class="icon-folder mr-1"></i>
+                                            <span>Storage</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-chevron-right"></i>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+{% endblock %}

@@ -1,0 +1,361 @@
+{% extends 'forexaccess/Base.html' %}
+{% load static %}
+
+            {% block content %}
+                <br>
+            <section class="space-lg bg-gradient overflow-hidden">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 mb-5 mb-md-0 position-relative">
+                            <h1 class="display-4">Diversify your investment with Forex Access </h1>
+                            <p class="lead">
+                               FX Access is a Global internet brokerage and investment company. Our aim is to provide education and build a long term relationship with our client based on our corporate values of trust and performance.
+                            </p>
+                            <a href="{% url 'open_demo_account'%}" class="btn btn-lg btn-success">Open Demo Account</a>
+                            <a href="{% url 'open_live_account' %}" class="btn btn-lg btn-danger">Open Live Account <i class="icon-chevron-right"></i></a>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-md-6">
+                            <div class="main-carousel overflow-visible" data-flickity='{ "cellAlign": "center", "contain": true, "prevNextButtons": false, "pageDots":true, "wrapAround":true, "autoPlay":5000, "imagesLoaded":true, "initialIndex":3, "draggable":false }'>
+
+                              <div class="carousel-cell col-11">
+                                    <div class="">
+                                        <a href="{% url 'login'%}">
+                                            <img class="card-img-top" src="{% static 'forex_access/img/myfx.jpg' %}" alt="Collection - List">
+                                        </a>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="app-collection-list.html" class="h6 m-0"><h6 class="txfont">My Fx access</h6></a>
+                                            <a target="_blank" href="app-collection-list.html" data-toggle="tooltip" data-placement="top" title="Open in new tab"><i class="icon-popup"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell col-11">
+                                    <div class="">
+                                        <a href="{% url 'getting_started' %}">
+                                            <img class="card-img-top" src="{% static 'forex_access/img/getting_started.png' %}">
+                                        </a>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="landing-8.html" class="h6 m-0"><h1 class="txfont">Getting Started</h1></a>
+                                            <a target="_blank" href="landing-8.html" data-toggle="tooltip" data-placement="top" title="Open in new tab"><i class="icon-popup"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell col-11">
+                                    <div class="">
+                                        <a href="{% url 'education' %}">
+                                            <img class="card-img-top" src="{% static 'forex_access/img/edu.jpeg' %}" alt="Landing - Nine">
+                                        </a>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="landing-9.html" class="h6 m-0"><h1 class="txfont">Learn to Trade from The Best</h1></a>
+                                            <a target="_blank" href="landing-9.html" data-toggle="tooltip" data-placement="top" title="Open in new tab"><i class="icon-popup"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                        <div class="carousel-cell col-11">
+                                    <div class="">
+                                        <a href="{% url 'about' %}">
+                                            <img class="card-img-top" src="{% static 'forex_access/img/MetaTrader_mobile-trading.png' %}" alt="Landing - One">
+                                        </a>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="landing-1.html" class="h6 m-0"><h1 class="display-4 font-weight-bold txfont" >TRADE WITH A TRUSTED GLOBAL BROKER</h1></a>
+                                            <a target="_blank" href="landing-1.html" data-toggle="tooltip" data-placement="top" title="Open in new tab"><i class="icon-popup"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell col-11">
+                                    <div class="">
+                                        <a href="{% url 'deposit_withdrawal' %}">
+                                            <img class="card-img-top" src="{% static 'forex_access/img/trading_platforms_header.png' %}" alt="Documentation - Landing">
+                                        </a>
+                                        <div class=" d-flex justify-content-center">
+                                            <a href="{% url 'deposit_withdrawal' %}" class="h6 m-0" ><h1 class="txfont">Manage Deposit And withdrawal Effortlessly</h1></a>
+                                            <a target="_blank" href="app-docs-landing.html" data-toggle="tooltip" data-placement="top" title="Open in new tab"><i class="icon-popup"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-cell col-11">
+                                    <div class="">
+                                        <a href="app-discussion-list.html">
+                                            <img class="card-img-top" src="{% static 'forex_access/img/point.png' %}" alt="Discussion - List">
+                                        </a>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="app-discussion-list.html" class="h6 m-0"><h1 class="txfont">Forex For Beginners</h1> </a>
+                                            <a target="_blank" href="app-discussion-list.html" data-toggle="tooltip" data-placement="top" title="Open in new tab"><i class="icon-popup"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center text-center section-intro">
+                        <div class="col-12 col-md-9 col-lg-8">
+                            <span class="title-decorative">Welcome to Forex Access</span>
+                            <h2 class="display-4">Attractive from every angle</h2>
+                            <span class="lead">Forex Access is an established ECN forex broker serving both individual and corporate clients. We offer all of our customers a comprehensive range of trading options, Forex Access technical support, and consulting services, with the goal of making the trading process efficient, hassle-free, and above all highly profitable for you. From new account registration to money withdrawal, we make superior customer service our top priority.</span>
+
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="pricing-monthly" role="tab">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card pricing card-lg">
+                                        <div class="card-body">
+                                        <img alt="Image" src="{% static 'forex_access/img/icon3.png' %}" class="avatar avatar-lg" />
+                                            <h5>Standard</h5>
+                                            <span class="display-3 price-collapse collapse show">$500</span>
+                                            <span class="h6">Includes:</span>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <i class="icon-check text-green">&#10003;</i> High Leverage
+                                                </li>
+                                                <li>
+                                                    <i class="icon-check text-green">&#10003;</i> Deep Liquidity
+                                                </li>
+                                                <li>
+                                                     <i class="icon-check text-green">&#10003;</i> Strategic Flexibility
+                                                </li>
+                                                <li><i class="icon-check text-green">&#10003;</i> More Spreed, Less latency</li>
+                                                <li><i class="icon-check text-green">&#10003;</i> Security Of Funds</li>
+                                            </ul>
+                                            <a href="{% url 'open_live_account' %}" class="btn btn-lg btn-outline-success">Open Live Account</a>
+                                        </div>
+                                    </div>
+                                    <!--end card-->
+                                </div>
+                                <!--end of col-->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card pricing card-lg">
+                                        <div class="card-body">
+                                            <img alt="Image" src="{% static 'forex_access/img/icon2.png' %}" class="avatar avatar-lg" />
+                                            <h5>Professional ECN</h5>
+                                            <span class="display-3">$5,000</span>
+                                            <span class="h6">Includes:</span>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                   <i class="icon-check text-green">&#10003;</i> High Leverage
+                                                </li>
+                                                <li>
+                                                    <i class="icon-check text-green">&#10003;</i> Deep Liquidity
+                                                </li>
+                                                <li>
+                                                    <i class="icon-check text-green">&#10003;</i> Strategic Flexibility
+                                                </li>
+                                                <li><i class="icon-check text-green">&#10003;</i> Lower Transaction Fee</li>
+                                                <li><i class="icon-check text-green">&#10003;</i> Security Of Funds</li>
+                                            </ul>
+                                            <a href="{% url 'open_live_account' %}" class="btn btn-lg btn-outline-success">Open Live Account</a>
+                                        </div>
+                                    </div>
+                                    <!--end card-->
+                                </div>
+                                <!--end of col-->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card pricing card-lg">
+                                        <div class="card-body">
+                                            <img alt="Image" src="{% static 'forex_access/img/icon2f.png' %}" class="avatar avatar-lg" />
+                                            <h5>VIP ECN</h5>
+                                            <span class="display-3">$20,000</span>
+                                            <span class="h6">Includes:</span>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                   <i class="icon-check text-green">&#10003;</i> High Leverage
+                                                </li>
+                                                <li>
+                                                    <i class="icon-check text-green">&#10003;</i> Deep Liquidity
+                                                </li>
+                                                <li>
+                                                    <i class="icon-check text-green">&#10003;</i> Strategic Flexibility
+                                                </li>
+                                                <li><i class="icon-check text-green">&#10003;</i> Lowest Transaction Fee</li>
+                                                <li><i class="icon-check text-green">&#10003;</i> Security of Funds</li>
+                                            </ul>
+                                            <a href="{% url 'open_live_account' %}" class="btn btn-lg btn-outline-success">Open Live Account</a>
+                                        </div>
+                                    </div>
+                                    <!--end card-->
+                                </div>
+                                <!--end of col-->
+                            </div>
+                            <!--end of row-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            <section class="bg-white">
+                <div class="container">
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-12 col-md-6 col-lg-5 text-center text-md-left section-intro">
+                            <span class="title-decorative">Designed for Traders </span>
+                            <h3 class="h1" style="color: #2fa933">Familiar, modern Trading tools</h3>
+                            <span class="lead">
+                                Forex Access employs industry-standard Forex tools with an intuitive workflow designed to get you up and runnning faster.
+                            </span>
+                            <a href="#" style="color: #2fa933">Explore Our Tools &rsaquo;</a>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-8 col-md-6 col-lg-4">
+                            <img alt="Image" src="{% static 'forex_access/img/index.png' %}" class="img-fluid" />
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            <section class="bg-white flush-with-above pb-0">
+                <div class="container">
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-12 col-md-5 order-md-2 mb-5 mb-md-0">
+                            <span class="title-decorative">Developed for Traders</span>
+                            <h5 class="h1" style="color: #2fa933">All the Features,In One Device.</h5>
+                            <p class="lead">
+                                Built for all kind of devices with so much simplicity
+                            </p>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-md-5 order-md-1">
+                            <a href="pages-app.html">
+                                <img alt="Image" src="{% static 'forex_access/img/ipad2.png' %}" class="img-fluid" />
+                            </a>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            <section class="bg-gradient text-white space-lg">
+                <div class="container">
+                    <div class="row section-outro">
+                        <div class="col-12 text-center">
+                            <h4>Banks that you're familiar with</h4>
+                            <ul class="list-inline list-inline-large">
+                                <li class="list-inline-item">
+                                    <img alt="Image" class="logo" src="{% static 'forex_access/img/zenithBank.png' %}" />
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Image" class="logo" src="{% static 'forex_access/img/gtbank.png' %}" />
+                                </li>
+                                 <li class="list-inline-item">
+                                    <img alt="Image" class="logo" src="{% static 'forex_access/img/neteller.png' %}" />
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Image" class="logo" src="{% static 'forex_access/img/image.png' %}" />
+                                </li>
+                                  <li class="list-inline-item">
+                                    <img alt="Image" class="logo" src="{% static 'forex_access/img/masterCard.png' %}" />
+                                </li>
+                                  <li class="list-inline-item">
+                                    <img alt="Image" class="logo" src="{% static 'forex_access/img/paypalMain.png' %}" />
+                                </li>
+                                  <li class="list-inline-item">
+                                    <img alt="Image" class="logo" src="{% static 'forex_access/img/ae.png' %}" />
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center text-center section-intro">
+                        <div class="col-12 col-md-9 col-lg-8">
+                            <span class="title-decorative">Investment With Forex Access</span>
+                            <h2 class="display-4">Investment</h2>
+                            <span class="lead">ForexAccess has a wide-ranging investment portfolio, focused on achieving your dreams and aspirations from the global forex market.</span>
+
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-12 col-md-6 col-lg-5 order-md-2">
+                            <ul class="nav" id="myTab" role="tablist">
+                                <li>
+                                    <div class="active card" id="tab-1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                        <div class="card-body">
+                                            <h5>Monitor Your Portfolio</h5>
+                                            <p>
+                                               Link all of your accounts to the ForexAccess Invest Dashboard for a complete picture of your financial life. ForexAccess Invest is your personal money manager that helps with bank account aggregation, online asset tracking, personal expense & portfolio management with a three-fold promise of simple and fast set up, secure aggregation and intelligent analysis
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card" id="tab-2" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                        <div class="card-body">
+                                            <h5>Guided Portfolios</h5>
+                                            <p>
+                                                Decades of investing expertise now available to you at the click of a button through our guided portfolios. Our powerful system delivers personalized investment advice for each of your life’s important goals. You have access to some of the best investment strategies and themes from investment experts across the globe.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-md-6 order-md-1">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab-1">
+                                    <img alt="Image" class="img-fluid shadow" src="{% static 'forex_access/img/MetaTrader_mobile-trading.png' %}" />
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                    <div class="row justify-content-center text-center section-outro">
+                        <div class="col-lg-4 col-md-5">
+                            <h6>Detailed Overview</h6>
+                            <p>Forex Access Investment Options</p>
+                            <a href="{% url 'investment' %}" style="color: #2fa933">Start exploring &rsaquo;</a>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            <section class="bg-gradient p-0 text-white">
+                <svg class="decorative-divider" preserveAspectRatio="none" viewbox=" 0 0 100 100">
+                    <polygon fill="#F8F9FB" points="0 0 100 0 100 100"></polygon>
+                </svg>
+                <div class="container space-lg">
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="h1">Start Trading your Account with Forex Access</h3>
+                            <a href="{% url 'open_live_account' %}" class="btn btn-lg btn-light">Open Live Account</a>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends 'forexaccess/Base.html' %}
+{% load static %}
+
+
+   {% block content %}
+       <br>
+       <br>
+        <div class="main-container">
+
+            <section class="fullwidth-split">
+                <div class="container-fluid">
+                    <div class="row no-gutters height-100 justify-content-center">
+                        <div class="col-12 col-lg-6 fullwidth-split-image bg-gradient bg-dark d-flex justify-content-center align-items-center ">
+{#                            <img alt="Image" src="{% static 'forexaccess/img/photo-man-diary.jpg' %}" class="bg-image position-absolute opacity-30" />#}
+                            <div class="col-12 col-sm-8 col-lg-9 text-center pt-5 pb-5">
+                                <img alt="Image" src="{% static 'forex_access/img/custome_headphone.png' %}" class="mb-4 logo-lg" />
+                                <span class="h3 mb-5">We are one customer service</span>
+
+                                <div class="card text-left">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img alt="Image" src="{% static 'forex_access/img/logo.png' %}" class="avatar" />
+                                            <div class="media-body">
+                                                <p class="mb-1">
+                                                    Address: Plot 548 Adetokunbo Ademola Crescent,Wuse 2, Abuja,FCT. Nigeria
+                                                </p>
+                                                <small>info@forexaccess.com</small>
+                                                <br>
+                                                <small>Phone: 0702513000</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--end of col-->
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-sm-8 col-lg-6 fullwidth-split-text">
+                            <div class="col-12 col-lg-8 align-self-center">
+                                <div class="text-center mb-5">
+                                    <h1 class="h2 mb-2 text-green">Contact Us</h1>
+                                    <span>Our sales will contact you as soon as possible</span>
+                                </div>
+                                <ul>
+                             {% if messages %}
+                  {#            the form won't display is this hold#}
+                                        {% for message in messages %}
+                                            <div {% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %} role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                                            <strong>{{ message }}</strong>
+                                            </div>
+                                            {% endfor %}
+                                {% else %}
+                                 {{ form.non_field_errors }}
+                                    <form class="mb-4" action="{% url 'contact_us' %}" method="post">
+                                    {% csrf_token %}
+                                     <div class="form-group">
+                                         {{ form.reason.errors }}
+                                                    {{ form.reason }}
+
+                                     </div>
+                                     <div class="form-group">
+                                         {{ form.First_name.errors }}
+                                         {{ form.First_name }}
+                                    </div>
+                                      <div class="form-group">
+                                          {{ form.Last_name.errors }}
+                                        {{ form.Last_name }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form.Email.errors }}
+                                        {{ form.Email }}
+                                    </div>
+                                       <div class="form-group">
+                                           {{ form.phone_number.errors }}
+                                           {{ form.phone_number }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form.subject.errors }}
+                                        {{ form.subject }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form.request.errors }}
+                                        {{ form.request }}
+                                    </div>
+
+                                    <div class="text-center mt-4">
+                                        <button type="submit" class="btn btn-lg btn-success">Submit</button>
+                                    </div>
+                                </form>
+                             {% endif %}
+
+                             <div class="text-center">
+                                    <span class="text-small">Already have an account? <a href="{% url 'login' %}">Log in here</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--end of col-->
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+
+        </div>
+
+
+{% endblock %}
+
+
+
+

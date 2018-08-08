@@ -1,0 +1,254 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Forex Access</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A robust suite of app and landing page templates by Medium Rare">
+        <link rel="icon" href="{% static 'forex_access/img/logo.png' %}" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500" rel="stylesheet">
+        <link href="assets/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/entypo.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{% static 'forex_access/css/theme.css' %}" rel="stylesheet" type="text/css" media="all" />
+    </head>
+
+
+        <div class="nav-container">
+            <div class="bg-dark navbar-dark position-fixed" data-sticky="top">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="{% url 'index'%}">
+                            <img alt="Forex Access logo" src="{% static 'forex_access/img/logoFX.png' %}" />
+                        </a>
+                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="{% url 'about' %}" class="nav-link">About us</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a href="{% url 'account_types' %}" class="nav-link">Account Types</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'investment' %}" class="nav-link">Investment</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown">Forex</a>
+                                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+
+                                        <a class="dropdown-item" href="{% url 'deposit_withdrawal'%}">
+                                            <span class="h6 mb-0">Deposit And Withdrawal</span>
+                                            <p class="text-small text-muted">We deliver our services</p>
+                                        </a>
+
+                                        <div class="dropdown-divider"></div>
+
+
+                                        <a class="dropdown-item" href="{% url 'investment' %}">
+                                            <span class="h6 mb-0">Investment</span>
+                                            <p class="text-small text-muted">Become Part of Forex Access Investors</p>
+                                        </a>
+
+                                        <div class="dropdown-divider"></div>
+
+
+                                        <a class="dropdown-item" href="{% url 'economic_calender' %}">
+                                            <span class="h6 mb-0">Economic Calender</span>
+                                            <p class="text-small text-muted">Get the current pairs value</p>
+                                        </a>
+
+
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="componentsDropdown" role="button" data-toggle="dropdown">Components</a>
+                                    <div class="dropdown-menu" aria-labelledby="componentsDropdown">
+
+                                        <a class="dropdown-item" href="components-bootstrap.html">Bootstrap</a>
+
+                                        <a class="dropdown-item" href="components-wingman.html">Wingman</a>
+
+                                    </div>
+                                </li>
+                            </ul>
+
+
+
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="{% url 'open_live_account' %}" class="nav-link">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'education'%}" class="nav-link">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'contact_us' %}" class="nav-link">Contact us</a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a href="{% url 'login' %}" class="btn btn-success  btn-rounded ">MY FXAccess</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!--end nav collapse-->
+                    </nav>
+                </div>
+                <!--end of container-->
+            </div>
+        </div>
+        <div class="main-container">
+                {% block content %}
+                {% endblock %}
+           </div>
+            <footer class="bg-gray text-light footer-long">
+                <div class="container">
+                    <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 mb-5 mb-md-0 position-relative ">
+                            <a href="{% url 'open_demo_account'%}" class="btn btn-lg btn-success ">Open Demo Account</a>
+                            <a href="{% url 'open_live_account' %}" class="btn btn-lg btn-danger ">Open Live Account <i class="icon-chevron-right"></i></a>
+                    </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <img alt="Image" src="{% static 'forex_access/img/logo.png' %}" class="mb-4" />
+                            <p class="text-muted">
+                                &copy; 2018 COPYRIGHT
+                                <br /> FOREXACCESS.
+                                <br /> ALL RIGHTS RESERVED
+                            </p>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img alt="Image" src="{% static 'forex_access/img/social-share-twitter.svg' %}" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img alt="Image" src="{% static 'forex_access/img/social-share-facebook.svg' %}" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img alt="Image" src="{% static 'forex_access/img/social-share-linkedin.svg' %}" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-md-9">
+                            <div class="row no-gutters">
+                                <div class="col-6 col-lg-3">
+                                    <h6 class="text-info">Navigate</h6>
+                                    <ul class="list-unstyled">
+
+                                        <li>
+                                            <a href="{% url 'account_types'%}">Account Tyes</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'open_live_account' %}">Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'education' %}">Education</a>
+                                        </li>
+                                         <li>
+                                            <a href="{% url 'getting_started' %}">Getting Started</a>
+                                        </li>
+                                         <li>
+                                            <a href="{% url 'open_demo_account' %}">Open Demo Account</a>
+                                        </li>
+                                         <li>
+                                            <a href="{% url 'open_live_account' %}">Open Live Account</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                                <div class="col-6 col-lg-3">
+                                    <h6 class="text-info">Platform</h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">Mac OS &amp; iOS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Android &amp; Chrome OS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Windows</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Linux</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                                <div class="col-6 col-lg-3">
+                                    <h6 class="text-info">Community</h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">Forum</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Knowledgebase</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Hire an expert</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'contact_us' %}">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                                <div class="col-6 col-lg-3">
+                                    <h6 class="text-info">Company</h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">About company</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">History</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Investment</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                            </div>
+                            <!--end of row-->
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+        </div>
+
+
+
+        <script type="text/javascript" src="{% static 'forex_access/js/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'forex_access/js/popper.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'forex_access/js/jquery.smartWizard.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'forex_access/js/flickity.pkgd.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'forex_access/js/scrollMonitor.js' %}"></script>
+        <script type="text/javascript" src="{% static 'forex_access/js/smooth-sctoll.polyfills.js' %}"></script>
+        <script type="text/javascript" src="{% static 'forex_access/js/prism.js' %}"></script>
+        <script type="text/javascript" src="{% static 'forex_access/js/zoom.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'forex_access/js/bootstrap.js' %}"></script>
+        <script type="text/javascript" src="{% static 'forex_access/js/theme.js' %}"></script>
+
+
+</html>
