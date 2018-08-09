@@ -108,8 +108,10 @@
                 <div class="container">
                     <div class="row justify-content-center">
                     <div class="col-12 col-md-6 mb-5 mb-md-0 position-relative ">
-                            <a href="{% url 'open_demo_account'%}" class="btn btn-lg btn-success ">Open Demo Account</a>
-                            <a href="{% url 'open_live_account' %}" class="btn btn-lg btn-danger ">Open Live Account <i class="icon-chevron-right"></i></a>
+                         <div class="btn-group btn-group-justified">
+                            <a href="{% url 'open_demo_account'%}" > <button class="btn btn-lg btn-success">Open Demo Account</button> </a>
+                            <a href="{% url 'open_live_account' %}" class="btn btn-lg btn-danger">Open Live Account <i class="icon-chevron-right"></i></a>
+                            </div>
                     </div>
                     </div>
                     <br>
