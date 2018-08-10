@@ -75,8 +75,8 @@ def register(request):
             return redirect('index')
     else:
         form = RegisterationForm()
-        context = {'form': form}
-        return render(request, 'registration/register.html', context)
+    context = {'form': form}
+    return render(request, 'registration/register.html', context)
 
 
 def Economic_calender(request):

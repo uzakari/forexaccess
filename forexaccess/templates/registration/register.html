@@ -35,39 +35,50 @@
                     <div class="row flex-md-row card card-lg">
                         <div class="col-12 col-md-7 card-body bg-secondary">
                             <div class="text-center mb-5">
-                                <h1 class="h2 mb-2">Start creating immediately</h1>
-                                <span>Delight your team and customers with Wingman</span>
+                                <h1 class="h2 mb-2">You are about to Open your Unique MT4 Trading Account</h1>
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-12 col-lg-9">
+                                {{  form.non_field_errors }}
                                     <form method="post" action="{% url 'register' %}">
                                         {% csrf_token %}
                                         {% if form.errors %}
                                             <p>There are errors in the form </p>
                                         {% endif %}
-                                    {{ form }}
                                         <div class="form-row form-group">
                                             <div class="col">
-                                                <input class="form-control form-control-lg" type="text" id="company" placeholder="Company Name" />
+                                               <input class="form-control form-control-lg" type="text" name="{{ form.username.html_name }}" id="{{ form.username.id_for_label }}" placeholder="username" />
+                                                {{ form.username.errors }}
                                             </div>
                                         </div>
                                         <div class="form-row form-group">
                                             <div class="col">
-                                                <input class="form-control form-control-lg" type="text" id="firstname" placeholder="First Name" />
+                                                <input class="form-control form-control-lg" type="text" id="{{ form.first_name.id_for_label }}" placeholder="First Name" />
+                                                {{ form.first_name.errors }}
                                             </div>
                                             <div class="col">
-                                                <input class="form-control form-control-lg" type="text" id="lastname" placeholder="Last Name" />
-                                            </div>
-                                        </div>
-                                        <div class="form-row form-group">
-                                            <div class="col">
-                                                <input class="form-control form-control-lg" type="email" id="email" placeholder="Email Address" />
+                                                <input class="form-control form-control-lg" type="text" id="{{ form.last_name.id_for_label }}" placeholder="Last Name" />
+                                                {{ form.last_name.errors }}
                                             </div>
                                         </div>
                                         <div class="form-row form-group">
                                             <div class="col">
-                                                <input class="form-control form-control-lg" type="password" id="password" placeholder="Password" />
-                                                <small>Password must be at least 7 characters</small>
+                                                <input class="form-control form-control-lg" type="text" name="{{ form.email.html_name }}" id="{{ form.email.id_for_label }}" placeholder="Email Address" />
+                                                {{ form.email.errors }}
+                                            </div>
+                                        </div>
+                                        <div class="form-row form-group">
+                                            <div class="col">
+                                                <input class="form-control form-control-lg" type="password" name="{{ form.password1.html_name }}" id="{{ form.password1.id_for_label }}" placeholder="Password" />
+                                                {{ form.password1.errors }}
+                                                <small>{{ form.password1.help_text }}</small>
+                                            </div>
+                                        </div>
+                                     <div class="form-row form-group">
+                                            <div class="col">
+                                              <input class="form-control form-control-lg" type="password" name="{{ form.password2.html_name }}" id="{{ form.password2.id_for_label }}" placeholder="Confirm Password" />
+                                                {{ form.password2.errors }}
+                                                <small>It Must Match the first Password</small>
                                             </div>
                                         </div>
                                         <div class="form-row form-group">
@@ -88,28 +99,46 @@
                             <div>
                                 <div class="mb-5 text-center">
                                     <h3 class="h2 mb-2">Features &amp; Benefits</h3>
-                                    <span>All plans come with 14 days free</span>
                                 </div>
                                 <ul class="list-unstyled list-spacing-sm mb-5 ">
                                     <li class="row">
                                         <div class="col-2 col-md-1"><i class="icon-check h5 text-muted"></i>
                                         </div>
-                                        <div class="col-10">Introduce the major benefits of your product and set the scene for what's to come</div>
+                                        <div class="col-10">Your ability to earn with the help of an experienced Account Managers starts with you opening your investment profile.
+                                            Registration takes only a few minutes and will allow you to access the Forex market and invest funds.
+                                        </div>
                                     </li>
                                     <li class="row align-items-center">
-                                        <div class="col-2 col-md-1"><i class="icon-check h5 text-muted"></i>
+                                      <h5>FOR BEGINNERS</h5>
+                                        <div class="col-10">
+                                            <ul>
+                                            <li>Free training</li>
+                                            <li>Personal manager</li>
+                                            <li>Easy registration</li>
+                                            </ul>
                                         </div>
-                                        <div class="col-10">Make a bold new start today</div>
                                     </li>
                                     <li class="row">
-                                        <div class="col-2 col-md-1"><i class="icon-check h5 text-muted"></i>
+                                      <h5>FOR EXPERIENCED TRADERS</h5>
+                                        <div class="col-10">
+                                            <ul>
+                                                <li>Best spreads. Min 0.4 points</li>
+                                                <li>High leverage</li>
+                                                <li>Trusted trading platform</li>
+                                            </ul>
                                         </div>
-                                        <div class="col-10">Describe some key features of this aspect of the product</div>
                                     </li>
                                     <li class="row align-items-center">
-                                        <div class="col-2 col-md-1"><i class="icon-check h5 text-muted"></i>
+                                        <h5>FOR PARTNERS 
+                                        <small>Best Partnership Condition</small>
+                                        </h5>
+                                        <div class="col-10">
+                                            <ul>
+                                                <li>Up to 40% revenue share</li>
+                                                <li>Up to 2.5pips Markup</li>
+                                                <li>Up to $500 CPA</li>
+                                            </ul>
                                         </div>
-                                        <div class="col-10">Make a bold new start today</div>
                                     </li>
                                 </ul>
 
