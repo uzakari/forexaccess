@@ -1,1 +1,1 @@
-web: gunicorn forexaccess_prime.wsgi.py
+web: gunicorn forexaccess_prime.wsgi
