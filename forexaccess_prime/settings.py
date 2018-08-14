@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,12 +22,20 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5=hhzd1p_r=l0)g4vq=buw(&nr%8owq)dci*8e8#2@h3t_o5!_'
+SECRET_KEY = os.environ.get('SECRET_KEY','5=hhzd1p_r=l0)g4vq=buw(&nr%8owq)dci*8e8#2@h3t_o5!_')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['forexaccess.herokuapp.com']
+ALLOWED_HOSTS = ['forexaccess.herokuapp.com', '.forexaccess.com']
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'uzakari2@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'Umar <uzakari2@gmail.com>'
+ADMIN = (('umar', 'uzakari2@gmail.com'))
 
 
 # Application definition
@@ -81,6 +90,9 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
@@ -143,3 +155,19 @@ STATIC_URL = '/static/'
 # django_heroku.settings(locals())
 #
 # STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
+
+
+
+
+
+CORS_REPLACE_HTTPS_REFERER = True
+HOST_SCHEME = "https://"
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_SECONDS = True
+SECURE_FRAME_DENY = True
