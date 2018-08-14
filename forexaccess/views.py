@@ -83,6 +83,14 @@ def Economic_calender(request):
     return render(request, 'forexaccess/econominc_calender.html')
 
 
+def platforms(request):
+    return render(request, 'forexaccess/platforms.html')
+
+
+def ecoIndicator(request):
+    return render(request, 'forexaccess/EconominIndicators.html')
+
+
 def handler404(request, exception, template_name='404.html'):
     response = render_to_response('template_name', {}, context_instance=RequestContext(request))
     response.status_code = 400

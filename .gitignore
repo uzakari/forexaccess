@@ -4,10 +4,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+forexaccess_prime/settings.py
 # C extensions
 *.so
-
+db.sqlite3
 # Distribution / packaging
 .Python
 build/

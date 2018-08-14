@@ -13,7 +13,9 @@ urlpatterns = [
     path('investment/', views.investment, name='investment'),
     path('contact_us/', views.contact_us, name='contact_us'),
     path('register/', views.register, name='register'),
-    path('economic_calender/', views.Economic_calender, name='economic_calender')
+    path('economic_calender/', views.Economic_calender, name='economic_calender'),
+    path('platforms/', views.platforms, name='platforms'),
+    path('economic_indicators', views.ecoIndicator, name='economic_indicators')
 
 ]
 handler404 = 'forex_access.views.handler404'

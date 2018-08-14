@@ -1,9 +1,0 @@
-    {% if messages %}
-                  {#            the form won't display is this hold#}
-    {% for message in messages %}
-        <div {% if message.tags %} class="alert alert-{{ message.tags }}"{% elif message.tags == 'error'%} class="alert-{{ message.tags }}danger" {% endif %} role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>
-            <strong>{{ message }}</strong>
-        </div>
-    {% endfor %}
-{% endif %}

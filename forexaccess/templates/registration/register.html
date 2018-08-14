@@ -2,6 +2,8 @@
 
 {% block content %}
 
+    {% load static %}
+
         <div class="nav-container">
         </div>
         <div class="main-container">
@@ -145,12 +147,12 @@
                                 <div class="card card-sm shadow text-left">
                                     <div class="card-body p-4">
                                         <div class="media">
-                                            <img alt="Image" src="assets/img/avatar-male-1.jpg" class="avatar avatar-xs" />
+                                            <img alt="Image" src="{% static 'forex_access/img/Icon-Register.png' %}" class="avatar avatar-xs" />
                                             <div class="media-body">
                                                 <p class="mb-1 text-small">
-                                                    “Let’s get one thing straight, this theme’s a straight-up winner. No posers here, just beautiful design and code.”
+                                                    “Register now and start enjoying forex trading online”
                                                 </p>
-                                                <small>Daniel Cameron</small>
+                                                <small>Forex Access</small>
                                             </div>
                                         </div>
                                     </div>
