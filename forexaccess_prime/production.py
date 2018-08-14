@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','5=hhzd1p_r=l0)g4vq=buw(&nr%8owq)dci*8e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['forexaccess.herokuapp.com', '.forexaccess.com']
+ALLOWED_HOSTS = ['shielded-wildwood-64860.herokuapp.com', '.forexaccess.com']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'uzakari2@gmail.com'
