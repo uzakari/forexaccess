@@ -28,6 +28,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['forexaccess.herokuapp.com']
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'uzakari2@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'Umar <uzakari2@gmail.com>'
+ADMIN = (('umar', 'uzakari2@gmail.com'))
 
 # Application definition
 
