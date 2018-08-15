@@ -1,0 +1,114 @@
+{% extends 'forexaccess/Base.html' %}
+{% block content %}
+{% load static %}
+        <div class="main-container">
+
+            <section>
+                <br>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <h1 class="display-4">Trading Platform</h1>
+                            <span>Forex Trading Platforms By Forex access</span>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            <section class="flush-with-above">
+                <div class="container">
+                    <div class="row">
+
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-borderless table-hover align-items-center">
+
+                                <tbody>
+
+                                    <tr class="bg-white">
+                                        <th scope="row">
+                                            <a class="media align-items-center" href="#">
+                                                <img alt="Image" src="{% static 'forex_access/img/met4.png' %}" class="avatar rounded avatar-sm" />
+                                                <div class="media-body">
+                                                    <span class="h6 mb-0">MetaTrader For Your Pcs</span>
+                                                    <span class="text-muted">Download your desktop Meta Trader</span>
+                                                </div>
+                                            </a>
+                                        </th>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <span class="badge badge-success">Active</span>
+                                        </td>
+                                        <td>
+                                            <div class="">
+                                                <a href="{% url 'open_live_account ' %}">  <button class="btn btn-success" type="submit">Download</button></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+
+                                    <tr class="bg-white">
+                                        <th scope="row">
+                                            <a class="media align-items-center" href="#">
+                                                <img alt="Image" src="{% static 'forex_access/img/met4.png' %}" class="avatar rounded avatar-sm" />
+                                                <div class="media-body">
+                                                    <span class="h6 mb-0">Metatrader For your Android Phones</span>
+                                                    <span class="text-muted">Download your Android MetaTrader</span>
+                                                </div>
+                                            </a>
+                                        </th>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <span class="badge badge-success">Active</span>
+                                        </td>
+                                        <td>
+                                            <div class="">
+                                                   <a href="{% url 'open_live_account' %}">  <button class="btn btn-success" type="submit">Download</button></a>
+                                                <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="dropdownMenuButton">
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+
+
+                                    <tr class="table-divider"></tr>
+
+
+                                    <tr class="table-divider"></tr>
+
+
+                                    <tr class="table-divider"></tr>
+
+
+                                    <tr class="table-divider"></tr>
+
+
+                                    <tr class="table-divider"></tr>
+
+
+                                    <tr class="table-divider"></tr>
+
+                                </tbody>
+                            </table>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            {% endblock %}

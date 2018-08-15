@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4d07aff-5959-4522-bf72-5bf67f57c839" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forexaccess/templates/forexaccess/Base.html" afterPath="$PROJECT_DIR$/forexaccess/templates/forexaccess/Base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forexaccess/urls.py" afterPath="$PROJECT_DIR$/forexaccess/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forexaccess_prime/settings.py" afterPath="$PROJECT_DIR$/forexaccess_prime/settings.py" />
-    </list>
+    <list default="true" id="a4d07aff-5959-4522-bf72-5bf67f57c839" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +55,8 @@
       <file leaf-file-name="platforms.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forexaccess/templates/forexaccess/platforms.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="50" column="82" lean-forward="false" selection-start-line="50" selection-start-column="82" selection-end-line="50" selection-end-column="82" />
+            <state relative-caret-position="-898">
+              <caret line="50" column="83" lean-forward="false" selection-start-line="50" selection-start-column="83" selection-end-line="50" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -78,21 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/main.css">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="15" />
+            <state relative-caret-position="85">
+              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="136" column="2" lean-forward="false" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="2" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forexaccess/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="86" column="33" lean-forward="false" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+            <state relative-caret-position="179">
+              <caret line="86" column="54" lean-forward="false" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
               </folding>
@@ -174,18 +170,18 @@
         <option value="$PROJECT_DIR$/forexaccess/templates/forexaccess/account_types.html" />
         <option value="$PROJECT_DIR$/forexaccess/templates/forexaccess/validation.html" />
         <option value="$PROJECT_DIR$/forexaccess/templates/forexaccess/education.html" />
-        <option value="$PROJECT_DIR$/forexaccess/views.py" />
         <option value="$PROJECT_DIR$/forexaccess/templates/forexaccess/EconominIndicators.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/forexaccess_prime/__init__.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/forexaccess_prime/base.py" />
-        <option value="$PROJECT_DIR$/forexaccess/templates/forexaccess/platforms.html" />
         <option value="$PROJECT_DIR$/static/main.css" />
         <option value="$PROJECT_DIR$/forexaccess_prime/production.py" />
         <option value="$PROJECT_DIR$/forexaccess_prime/settings.py" />
         <option value="$PROJECT_DIR$/forexaccess/templates/forexaccess/Base.html" />
         <option value="$PROJECT_DIR$/forexaccess/urls.py" />
+        <option value="$PROJECT_DIR$/forexaccess/views.py" />
+        <option value="$PROJECT_DIR$/forexaccess/templates/forexaccess/platforms.html" />
       </list>
     </option>
   </component>
@@ -405,8 +401,13 @@
           <line>72</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="python-line">
+          <url>file://$PROJECT_DIR$/forexaccess/views.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -683,22 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forexaccess_prime/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -721,14 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-139">
           <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forexaccess/templates/forexaccess/platforms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="50" column="82" lean-forward="false" selection-start-line="50" selection-start-column="82" selection-end-line="50" selection-end-column="82" />
           <folding />
         </state>
       </provider>
@@ -805,11 +782,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/forexaccess/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="86" column="33" lean-forward="false" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        <state relative-caret-position="179">
+          <caret line="86" column="54" lean-forward="false" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forexaccess/templates/forexaccess/platforms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-898">
+          <caret line="50" column="83" lean-forward="false" selection-start-line="50" selection-start-column="83" selection-end-line="50" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
