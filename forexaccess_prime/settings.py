@@ -146,3 +146,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'live-static', 'static-root')
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'live-static', 'media-root')
+
+CSRF_COOKIE_SECURE = False
