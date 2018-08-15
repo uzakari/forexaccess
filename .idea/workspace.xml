@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4d07aff-5959-4522-bf72-5bf67f57c839" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forexaccess/static/forex_access/img/edu_head.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/forexaccess/static/forex_access/img/graphic-intro-widgets.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forexaccess/templates/forexaccess/education.html" afterPath="$PROJECT_DIR$/forexaccess/templates/forexaccess/education.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forexaccess_prime/__init__.py" afterPath="$PROJECT_DIR$/forexaccess_prime/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forexaccess_prime/settings.py" afterPath="$PROJECT_DIR$/forexaccess_prime/settings.py" />
-    </list>
+    <list default="true" id="a4d07aff-5959-4522-bf72-5bf67f57c839" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
