@@ -26,7 +26,7 @@ SECRET_KEY = '5=hhzd1p_r=l0)g4vq=buw(&nr%8owq)dci*8e8#2@h3t_o5!_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['forexaccess.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'uzakari2@gmail.com'
