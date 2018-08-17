@@ -91,6 +91,9 @@ def ecoIndicator(request):
     return render(request, 'forexaccess/EconominIndicators.html')
 
 
+def copy_trading(request):
+    return render(request, 'forexaccess/copy_trading.html')
+
 def handler404(request, exception, template_name='404.html'):
     response = render_to_response('template_name', {}, context_instance=RequestContext(request))
     response.status_code = 400

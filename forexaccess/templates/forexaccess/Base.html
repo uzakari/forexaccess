@@ -43,8 +43,38 @@
                                   <li class="nav-item">
                                     <a href="{% url 'account_types' %}" class="nav-link">Account Types</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="{% url 'investment' %}" class="nav-link">Investment</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="{% url 'investment' %}" id="pagesDropdown" data-toggle="dropdown">Investment</a>
+                                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+
+                                        <a class="dropdown-item" href="{% url 'copy_trading' %}">
+                                            <span class="h6 mb-0">Copy trading with FXAL</span>
+                                            <p class="text-small text-muted">Making Trade easy for Beginners </p>
+                                        </a>
+
+                                        <div class="dropdown-divider"></div>
+
+
+                                        <a class="dropdown-item" href="">
+                                            <span class="h6 mb-0">Be an Account Manager with FXAL</span>
+                                            <p class="text-small text-muted">Additional Revenue for Pro Traders</p>
+                                        </a>
+
+                                        <div class="dropdown-divider"></div>
+
+
+                                        <a class="dropdown-item" href="">
+                                            <span class="h6 mb-0">Account Manager Rankings</span>
+                                            <p class="text-small text-muted">Check Who to Follow</p>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="">
+                                            <span class="h6 mb-0">Investment Terms</span>
+
+                                        </a>
+
+
+                                    </div>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown">Forex</a>

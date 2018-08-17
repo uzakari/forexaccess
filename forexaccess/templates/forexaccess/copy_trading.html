@@ -1,0 +1,102 @@
+{% extends 'forexaccess/Base.html' %}
+{% load static %}
+
+{% block content %}
+    <br>
+    <br>
+        <div class="main-container">
+
+            <section class="bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="display-4">Start Copy Trading with Forex Access</h1>
+                            <span class="lead">A brief guide on getting started with Copy Trading</span>
+
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!--end of section-->
+            <section class="space-sm">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-8 col-lg-7">
+                            <article>
+                                <h5>The ultimate copy trading programme</h5>
+                                <p>
+                                    Join Forex Access cutting-edge copy trading programme with Forex Access Invest and match up
+                                    with a suitable trader. Let them trade while you watch your potential profits grow.
+                                </p>
+                                <p>
+                                    Seize the opportunity to grow your capital in the most liquid market in the world by copying the trades of top performing traders in our investment programme
+                                </p>
+                                 <div class="col-12  order-md-1">
+
+                                        <img alt="Image" src="{% static 'forex_access/img/copy_trading.png' %}" class="img-fluid" />
+                                 </div>
+
+                                <h5 style="color: #4c1d1b;">
+                                    No advanced technical trading knowledge? …Forex Access Invest is built for you.
+                                </h5>
+
+                                <p>
+                                    No hidden fees, no downloads, no stress. We provide you with the tools you need to make the most of your forex investment and open the doors to a world of opportunities.
+                                </p>
+                                <p>
+                                   By choosing from 300+ Account Managers, you decide who to follow & how much you want to invest.
+                                </p>
+                                <p>No one, except you, has access to your personal details or money.</p>
+                            </article>
+                            <hr>
+                            <h5 class="mb-4">Click to Button Below to Start</h5>
+                            <form class="d-flex justify-content-between">
+                                <div>
+                                    <a href="{% url 'open_live_account' %}" class="btn btn-success">Start Copy Trading</a>
+                                </div>
+                            </form>
+                            <br>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div><a href="{% url 'copy_trading' %}">Copy Trading</a> </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div><i class="icon-edit mr-1"></i> Last updated</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div><i class="icon-thumbs-up mr-1"></i> Likes</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div><i class="icon-share mr-1"></i> Shares</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            </div>
+                            <!--end of card-->
+
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+{% endblock %}
