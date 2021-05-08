@@ -27,7 +27,7 @@ djangorestframework==3.7.7
 DjangoSEO==1.0
 dominate==2.3.1
 enum-compat==0.0.2
-eventlet==0.21.0
+eventlet==0.31.0
 fake-useragent==0.1.10
 Flask==0.10.1
 Flask-Admin==1.5.0
